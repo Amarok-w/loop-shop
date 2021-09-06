@@ -16,9 +16,6 @@ body {
   font-family: "Monsterrat", "Segoe UI", "Arial", sans-serif;
   color: #fff;
 }
-a:hover {
-  text-decoration: underline;
-}
 .wrapper {
   min-height: 100%;
   overflow: hidden;
@@ -209,8 +206,19 @@ a:hover {
   font-size: 1.5rem;
   padding: 20px 0;
   text-decoration: underline;
+  background: var(--accent);
 
   display: none;
+}
+
+@media screen and (max-width: 1024px) {
+
+  .category {
+    width: auto;
+    height: 180px;
+    background: var(--cream) url(../img/t-shirt.png) no-repeat 100% 100%;
+    background-size: 90%;
+  }
 }
 
 
@@ -230,8 +238,96 @@ a:hover {
 /* categories */
 
 
+/* models */
 
+.models {
+  margin: 150px 0;
+  color: #000;
+}
+.models-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.models__title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+.models-grid {
+  margin: 100px 0;
+  display: grid;
+  grid-template: 1fr / repeat(4, 1fr);
+  grid-gap: 30px;
+}
+.model {
+  text-align: center;
+  padding: 25px;
+  position: relative;
+}
 
+.tl {
+  height: 25px;
+  width: 25px;
+  border-top: 3px solid var(--accent);
+  border-left: 3px solid var(--accent);
+  top: 0;
+  left: 0;
+}
+.tr {
+  height: 25px;
+  width: 25px;
+  border-top: 3px solid var(--accent);
+  border-right: 3px solid var(--accent);
+  top: 0;
+  right: 0;
+}
+.bl {
+  height: 25px;
+  width: 25px;
+  border-bottom: 3px solid var(--accent);
+  border-left: 3px solid var(--accent);
+  bottom: 0;
+  left: 0;
+}
+.br {
+  height: 25px;
+  width: 25px;
+  border-bottom: 3px solid var(--accent);
+  border-right: 3px solid var(--accent);
+  bottom: 0;
+  right: 0;
+}
+.ang {
+  position: absolute;
+}
+
+.model__name {
+  margin: 25px 0 15px 0;
+  font-weight: 600;
+}
+.model__price {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+.all-models {
+  width: 220px;
+  height: 55px;
+  background: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.all-modeld__text {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.15rem;
+  color: #fff;
+  margin-right: 10px;
+}
+
+/* models */
 
 
 
