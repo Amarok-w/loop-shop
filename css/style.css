@@ -264,6 +264,8 @@ body {
   text-align: center;
   padding: 25px;
   position: relative;
+  width: 255px;
+  height: 350px;
 }
 
 .tl {
@@ -326,6 +328,55 @@ body {
   color: #fff;
   margin-right: 10px;
 }
+
+.l-arrow {
+  height: 45px;
+  width: 45px;
+  background: var(--accent);
+  position: absolute;
+}
+.r-arrow {
+  height: 25px;
+  width: 25px;
+  background: red;
+  position: absolute;
+  right: 0;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+  .models-flex {
+    position: relative;
+  }
+
+  .models-window {
+    border: 2px solid red;
+    overflow: hidden;
+    width: 350px;
+    padding: 0 10px 0 5px;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  .model {
+    margin: 0 45px;
+  }
+  .models-grid {
+    /* border: 2px solid yellow; */
+    left: 0;
+    /* display: flex */
+
+  }
+
+}
+
+
+
+
+
 
 /* models */
 
