@@ -62,7 +62,7 @@ body {
 }
 
 .nav__link_drop::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   right: -10px;
@@ -71,7 +71,6 @@ body {
   display: flex;
   background: url(../img/drop-arrow.svg) no-repeat;
 }
-
 
 .nav__link {
 }
@@ -83,8 +82,6 @@ body {
 }
 .shape {
 }
-
-
 
 /* header-content */
 
@@ -127,7 +124,7 @@ body {
   display: flex;
   width: 400%;
   position: relative;
-  
+
   transition: all 250ms ease;
 }
 .slider-item {
@@ -171,9 +168,7 @@ body {
   background: var(--accent);
 }
 
-
 @media screen and (max-width: 768px) {
-
   .header-content {
     margin: 50px 0 0 0;
   }
@@ -211,31 +206,14 @@ body {
     border-radius: 200px;
   }
 
-
   @media screen and (max-width: 480px) {
-
-  .slider-window {
-    width: 100%;
+    .slider-window {
+      width: 100%;
+    }
   }
-
-  }
-
 }
 
-
-
-
-
-
-
-
 /* header-content */
-
-
-
-
-
-
 
 /* header ================================================== */
 
@@ -346,12 +324,9 @@ body {
 
 /* colects */
 
-
-
 /* categories */
 
 .categories {
-  
 }
 .categories-grid {
   display: grid;
@@ -383,7 +358,6 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
-
   .category {
     width: auto;
     height: 180px;
@@ -392,22 +366,16 @@ body {
   }
 }
 
-
 @media screen and (max-width: 768px) {
-
   .category {
     display: none;
   }
   .categories__mobile {
     display: block;
   }
-
 }
 
-
-
 /* categories */
-
 
 /* models */
 
@@ -526,11 +494,9 @@ body {
   display: none;
 }
 
-
-
 @media screen and (max-width: 768px) {
-
-  .l-arrow, .r-arrow {
+  .l-arrow,
+  .r-arrow {
     display: block;
   }
 
@@ -553,16 +519,9 @@ body {
   .models-grid {
     left: 0;
   }
-
 }
 
-
-
-
-
-
 /* models */
-
 
 /* discounts */
 
@@ -589,7 +548,7 @@ body {
 }
 .discount__button {
   background: var(--accent);
-  color: #fff;  
+  color: #fff;
   width: 185px;
   height: 40px;
   margin: 0 0 0 35px;
@@ -597,9 +556,7 @@ body {
   cursor: pointer;
 }
 
-
 @media screen and (max-width: 768px) {
-
   .discounts-flex {
     flex-direction: column;
     align-items: center;
@@ -616,19 +573,9 @@ body {
   .discount__button {
     margin: 20px 0 0 0;
   }
-
 }
 
-
-
-
 /* discounts */
-
-
-
-
-
-
 
 /* main ================================================== */
 
