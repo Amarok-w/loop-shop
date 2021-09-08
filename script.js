@@ -4,9 +4,6 @@ const modelsGrid = document.querySelector('.models-grid');
 
 let counter = 0;
 let indent = 0;
-// 375
-// 750
-// 1125
 
 leftArrow.addEventListener('click', () => {
   if (counter == 0) {
