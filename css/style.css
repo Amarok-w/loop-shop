@@ -387,10 +387,9 @@ body {
   background: var(--black);
 }
 .discounts-flex {
-  padding: 70px;
+  padding: 70px 0;
   display: flex;
-  justify-content: space-between; 
-  border: 2px solid red;
+  justify-content: space-between;
 }
 .discount__title {
   text-transform: uppercase;
@@ -400,17 +399,47 @@ body {
 #discount__input {
   width: 255px;
   height: 40px;
-  padding: 10px 20px;
+  padding: 10px 10px;
   background: var(--cream);
+  font-size: 1.2rem;
+}
+.discounts__form {
+  
 }
 .discount__button {
   background: var(--accent);
   color: #fff;  
   width: 185px;
   height: 40px;
+  margin: 0 0 0 35px;
   text-transform: uppercase;
   cursor: pointer;
 }
+
+
+@media screen and (max-width: 768px) {
+
+  .discounts-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  .discount__title {
+    text-align: center;
+  }
+  .discounts__form {
+    margin: 20px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .discount__button {
+    margin: 20px 0 0 0;
+  }
+
+}
+
+
+
 
 /* discounts */
 
