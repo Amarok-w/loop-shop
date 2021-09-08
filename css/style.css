@@ -58,6 +58,22 @@ body {
   margin: 0 0 0 20px;
 }
 .nav__link {
+  position: relative;
+}
+
+.nav__link_drop::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -10px;
+  height: 5px;
+  width: 5px;
+  display: flex;
+  background: url(../img/drop-arrow.svg) no-repeat;
+}
+
+
+.nav__link {
 }
 .main-footer-info-up {
 }
@@ -135,7 +151,7 @@ body {
 }
 .slides-map {
   display: flex;
-  margin: 130px 0 0 0;
+  margin: 60px 0 0 0;
 }
 .slide-mark {
   width: 40px;
