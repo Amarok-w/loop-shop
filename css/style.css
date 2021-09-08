@@ -181,6 +181,7 @@ body {
 /* categories */
 
 .categories {
+  
 }
 .categories-grid {
   display: grid;
@@ -340,6 +341,7 @@ body {
   cursor: pointer;
   position: absolute;
   z-index: 100;
+  display: none;
 }
 
 .r-arrow {
@@ -351,11 +353,16 @@ body {
   cursor: pointer;
   position: absolute;
   z-index: 100;
+  display: none;
 }
 
 
 
 @media screen and (max-width: 768px) {
+
+  .l-arrow, .r-arrow {
+    display: block;
+  }
 
   .models-flex {
     position: relative;
@@ -391,6 +398,7 @@ body {
 
 .discounts {
   background: var(--black);
+  margin: 100px 0 0 0;
 }
 .discounts-flex {
   padding: 70px 0;
