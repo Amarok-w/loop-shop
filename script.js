@@ -67,9 +67,42 @@ function hamburgerMenu() {
   
   const burgerIcon = document.querySelector('.burger__icon');
   const burgerContent = document.querySelector('.burger-content');
-  let turnTrigger = 0;
+  function burgerLinesTogller() {
 
-  burgerIcon
+    const burgerLine1 = document.querySelector('.burger__line1');
+    const burgerLine2 = document.querySelector('.burger__line2');
+    const burgerLine3 = document.querySelector('.burger__line3');
+
+    burgerLine1.classList.toggle('burger__line1_opened');
+    burgerLine2.classList.toggle('burger__line2_opened');
+    burgerLine3.classList.toggle('burger__line3_opened');
+
+
+
+  }
+
+  let turnTrigger = false;
+
+
+  burgerIcon.addEventListener('click', () => {
+
+    turnTrigger = !turnTrigger;
+    burgerLinesTogller();
+    if (turnTrigger) {
+      burgerContent.style.left = 0;
+      burgerIcon.style.position = 'fixed';
+    } else {
+      burgerContent.style.left = '-110%';
+      burgerIcon.style.position = 'relative'
+    }
+
+  })
+
+  document.body.addEventListener('click', el => {
+
+    console.log(el.target);
+
+  })
 
 
 
