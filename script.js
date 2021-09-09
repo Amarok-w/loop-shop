@@ -60,3 +60,34 @@ function headerSlider() {
 
 modelsSlider();
 headerSlider();
+
+
+
+function hamburgerMenu() {
+  
+  const burgerIcon = document.querySelector('.burger__icon');
+  const burgerContent = document.querySelector('.burger-content');
+  let turnTrigger = 0;
+
+  burgerIcon
+
+
+
+
+}
+
+
+
+
+
+hamburgerMenu();
+
+
+
+
+
+
+
+
+
+

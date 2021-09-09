@@ -46,11 +46,12 @@ body {
   padding: 50px 0;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  
 }
 .nav-logo {
   display: flex;
   align-items: center;
+  
 }
 .nav-logo__text {
   font-size: 1.75rem;
@@ -59,6 +60,7 @@ body {
 }
 .nav__link {
   position: relative;
+  
 }
 
 .nav__link_drop::after {
@@ -92,18 +94,105 @@ body {
 .dropdown__link:hover {
   text-decoration: underline;
 }
-
-
-.nav__link {
-}
-.main-footer-info-up {
-}
-.main-footer__title {
-}
 .basket-block {
+  display: flex;
+  align-items: center;
 }
 .shape {
+  background: url(../img/amount.svg) no-repeat;
+  width: 45px;
+  height: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 10px 1px 0;
+  color: #fff;
+  font-weight: 700;
+  margin: 0 0 0 15px;
 }
+
+.burger { 
+  width: 80%;
+  display: flex;
+  /* position: relative; */
+}
+.burger-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.burger__icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 35px;
+  width: 45px;
+  cursor: pointer;
+  z-index: 1001;
+  position: relative;
+}
+.burger__line {
+  height: 5px;
+  width: 100%;
+  background: var(--accent);
+}
+
+.burger__line1_opened {
+  transform: rotate(45deg);
+  position: absolute;
+}
+.burger__line2_opened {
+  display: none;
+}
+.burger__line3_opened {
+  transform: rotate(-45deg);
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .menu {
+    margin: 0 10px;
+  }
+  .nav {
+    padding: 25px 20px 20px 20px;
+  }
+  .burger-content {
+    /* text-align: left; */
+    padding: 60px 30px 60px 30px;
+    z-index: 1000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    font-size: 1.75rem;
+    height: 100%;
+    width: 40%;
+    color: #fff;
+    background: var(--black);
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+  }
+  .dropdown {
+    margin: 15px 0;
+  }
+  .dropdown:hover .dropdown-content {
+    display: none;
+  }
+  .nav__link {
+    margin: 15px 0;
+  }
+  .nav-logo {
+    display: none;
+  }
+
+}
+
+
+
+
+
 
 /* header-content */
 
