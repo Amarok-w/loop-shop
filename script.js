@@ -35,23 +35,24 @@ function headerSlider() {
 
   const slideMarks = document.querySelectorAll('.slide-mark');
   const sliderLine = document.querySelector('.slider-line');
-  let current = 0;
+  let current;
 
 
 
   slideMarks.forEach(slideMark => {
     slideMark.addEventListener('click', el => {
-
+      
       slideMarks.forEach(elem => {
         elem.classList.remove('slider-mark_current');
       })
-
+      
       el.target.classList.add('slider-mark_current');
-
+      
+      
       current = 100 * el.target.classList[1].substring(el.target.classList[1].length - 1);
-
+      console.log(current);
       sliderLine.style.right = `${current}%`;
-
+      
     })
   })
 
@@ -100,8 +101,18 @@ function hamburgerMenu() {
 
   document.body.addEventListener('click', el => {
 
-    console.log(el.target);
+    console.log(el.path);
 
+    // burgerLinesTogller();
+    // if (turnTrigger) {
+    //   burgerContent.style.left = 0;
+    //   burgerIcon.style.position = 'fixed';
+    // } else {
+    //   burgerContent.style.left = '-110%';
+    //   burgerIcon.style.position = 'relative'
+    // }
+    
+    // turnTrigger = !turnTrigger;
   })
 
 

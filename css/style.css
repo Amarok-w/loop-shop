@@ -104,8 +104,8 @@ body {
   height: 17px;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  padding: 0 10px 1px 0;
+  justify-content: flex-end;  
+  padding: 0 5px 0 0;
   color: #fff;
   font-weight: 700;
   margin: 0 0 0 15px;
@@ -131,6 +131,7 @@ body {
   cursor: pointer;
   z-index: 1001;
   position: relative;
+  display: none;
 }
 .burger__line {
   height: 5px;
@@ -160,6 +161,9 @@ body {
   }
   .nav {
     padding: 25px 20px 20px 20px;
+  }
+  .burger__icon {
+    display: flex;
   }
   .burger-content {
     padding: 80px 30px 60px 30px;
@@ -239,7 +243,7 @@ body {
   display: flex;
   width: 400%;
   position: relative;
-
+  right: 0;
   transition: all 250ms ease;
 }
 .slider-item {
@@ -250,6 +254,7 @@ body {
   position: absolute;
   right: 0;
   top: 5%;
+  
 }
 .slider-item__past-price {
   font-size: 1.7em;
@@ -286,6 +291,9 @@ body {
 @media screen and (max-width: 768px) {
   .header-content {
     margin: 50px 0 0 0;
+  }
+  .prices {
+    margin: 0 30px 0 0;
   }
   .header-parts {
     flex-direction: column;
@@ -642,7 +650,6 @@ body {
 
 .discounts {
   background: var(--black);
-  margin: 100px 0 0 0;
 }
 .discounts-flex {
   padding: 70px 0;
@@ -782,6 +789,7 @@ body {
   .under-footer {
     background: var(--black);
     color: #fff;
+    text-align: center;
   }
   .under-footer-flex {
     height: inherit;
