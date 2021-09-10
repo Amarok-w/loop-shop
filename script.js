@@ -102,25 +102,15 @@ function hamburgerMenu() {
 
   document.body.addEventListener('click', el => {
 
-    console.log(el.path.indexOf(burgerContent));
-    console.log(el.path);
-
     if (turnTrigger == true) {
-
       if (el.path.indexOf(burgerContent) == -1 && el.path.indexOf(burgerIcon) == -1) {
-
         burgerLinesTogller();
         burgerContent.style.left = '-110%';
         burgerIcon.style.position = 'relative';
         turnTrigger = !turnTrigger;
-
-        
-  
       }
 
     }
-
-    
 
   })
 
