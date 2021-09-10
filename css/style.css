@@ -11,6 +11,7 @@
 
 html {
   font-size: 14px;
+  scroll-behavior: smooth;
 }
 body {
   font-family: "Monsterrat", "Segoe UI", "Arial", sans-serif;
@@ -787,7 +788,6 @@ body {
     cursor: pointer;
     user-select: none;
   }
-  
 
   .main-footer-hided-links {
     display: none;

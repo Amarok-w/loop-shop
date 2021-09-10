@@ -125,7 +125,7 @@ function footerSpoilers() {
   footerLists.addEventListener('click', el => {
     if (el.target.classList.contains('main-footer-list__title')) {
       let hidedList = el.target.nextSibling.nextSibling;
-      
+
       if (!togller) {
         togller = !togller;
         hidedList.style.display = 'flex';
@@ -133,8 +133,8 @@ function footerSpoilers() {
         togller = !togller;
         hidedList.style.display = 'none';
       }
-    } 
-  })  
+    }
+  })
 }
 
 
