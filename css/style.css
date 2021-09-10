@@ -724,6 +724,11 @@ body {
   text-transform: uppercase;
   font-size: 0.875rem;
 }
+.main-footer-hided-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 .main-footer-link {
   margin: 10px 0 0 0;
   color: #cbcfd4;
@@ -769,10 +774,25 @@ body {
   }
   .main-footer-lists {
     grid-template: 1fr 1fr 1fr 1fr / 1fr;
+    display: flex;
+    flex-direction: column;
   }
   .main-footer-list {
     margin: 0 0 40px;
     font-size: 1.5rem;
+    position: relative;
+  }
+  .main-footer-list__title {
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+
+  .main-footer-hided-links {
+    display: none;
+
+    transition: height 300ms ease;
   }
 
   .under-footer {

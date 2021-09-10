@@ -101,11 +101,40 @@ function hamburgerMenu() {
 
   })
 
+  burgerContent.addEventListener('click', el => {
+    if (el.target.classList.contains('nav__link')) {
+
+      burgerLinesTogller();
+      burgerContent.style.left = '-110%';
+      burgerIcon.style.position = 'relative';
+      turnTrigger = !turnTrigger;
+
+    }
+  })
+
 }
 function footerDate() {
   const footerSpan = document.querySelector('.currentYear');
   let currentYear = (new Date()).getFullYear();
   footerSpan.innerHTML = currentYear;
+}
+function footerSpoilers() {
+  const footerLists = document.querySelector('.main-footer-lists');
+  let togller = false;
+
+  footerLists.addEventListener('click', el => {
+    if (el.target.classList.contains('main-footer-list__title')) {
+      let hidedList = el.target.nextSibling.nextSibling;
+      
+      if (!togller) {
+        togller = !togller;
+        hidedList.style.display = 'flex';
+      } else {
+        togller = !togller;
+        hidedList.style.display = 'none';
+      }
+    } 
+  })  
 }
 
 
@@ -113,19 +142,4 @@ modelsSlider();
 headerSlider();
 hamburgerMenu();
 footerDate();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+footerSpoilers();
