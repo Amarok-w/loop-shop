@@ -105,19 +105,22 @@ function hamburgerMenu() {
     console.log(el.path.indexOf(burgerContent));
     console.log(el.path);
 
-    if (el.path.indexOf(burgerContent) == -1 && el.path.indexOf(burgerIcon) == -1) {
+    if (turnTrigger == true) {
 
-      burgerLinesTogller();
-      turnTrigger = !turnTrigger;
-      if (turnTrigger) {
-        burgerContent.style.left = 0;
-        burgerIcon.style.position = 'fixed';
-      } else {
+      if (el.path.indexOf(burgerContent) == -1 && el.path.indexOf(burgerIcon) == -1) {
+
+        burgerLinesTogller();
         burgerContent.style.left = '-110%';
-        burgerIcon.style.position = 'relative'
+        burgerIcon.style.position = 'relative';
+        turnTrigger = !turnTrigger;
+
+        
+  
       }
 
     }
+
+    
 
   })
 
