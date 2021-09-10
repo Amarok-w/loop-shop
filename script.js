@@ -18,6 +18,7 @@ function modelsSlider() {
       modelsGrid.style.marginLeft = `-${indent}px`;
     }
   })
+
   rightArrow.addEventListener('click', () => {
     if (counter == 3) {
       counter = 0;
@@ -35,9 +36,7 @@ function headerSlider() {
 
   const slideMarks = document.querySelectorAll('.slide-mark');
   const sliderLine = document.querySelector('.slider-line');
-  let current = 0;;
-
-
+  let current = 0;
 
   slideMarks.forEach(slideMark => {
     slideMark.addEventListener('click', el => {
@@ -48,7 +47,6 @@ function headerSlider() {
 
       el.target.classList.add('slider-mark_current');
 
-
       current = 100 * el.target.classList[1].substring(el.target.classList[1].length - 1);
       sliderLine.style.right = `${current}%`;
 
@@ -56,13 +54,6 @@ function headerSlider() {
   })
 
 }
-
-
-modelsSlider();
-headerSlider();
-
-
-
 function hamburgerMenu() {
 
   const burgerIcon = document.querySelector('.burger__icon');
@@ -80,9 +71,7 @@ function hamburgerMenu() {
 
 
   }
-
   let turnTrigger = false;
-
 
   burgerIcon.addEventListener('click', () => {
 
@@ -98,8 +87,6 @@ function hamburgerMenu() {
 
   })
 
-
-
   document.body.addEventListener('click', el => {
 
     if (turnTrigger == true) {
@@ -114,16 +101,24 @@ function hamburgerMenu() {
 
   })
 
-
-
-
+}
+function footerDate() {
+  const footerSpan = document.querySelector('.currentYear');
+  let currentYear = (new Date()).getFullYear();
+  footerSpan.innerHTML = currentYear;
 }
 
 
-
-
-
+modelsSlider();
+headerSlider();
 hamburgerMenu();
+footerDate();
+
+
+
+
+
+
 
 
 
